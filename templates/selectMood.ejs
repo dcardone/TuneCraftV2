@@ -11,6 +11,12 @@
         <link rel="icon" type="image/x-icon" href="../images/music-icon.png">
     </head>
     <body>
+        <!-- ERROR HANDLING ON BAD RESPONSE -->
+        <% if (typeof error !== 'undefined' && error) { %>
+            <script>alert("<%= error %>");</script>
+        <% } %>
+
+
         <h1 class="header">Today's Mood</h1>
         <form action="/suggestions" method="post">
             <div class="slider-group">
