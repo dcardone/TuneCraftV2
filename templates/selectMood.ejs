@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TuneCraft</title>
+        <link rel="stylesheet" href="../style/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../images/music-icon.png">
+    </head>
+    <body>
+        <h1 class="header">Today's Mood</h1>
+        <form action="/suggestions" method="post">
+            <div class="slider-group">
+
+                <div class="slider-col">
+                    <img src='../images/happy-face.png' alt="Happy face" class="slider-icon">
+                    <input type="range" orient='vertical' name="valence" id="moodSlider" min="0" max="1" step="0.01">
+                    <img src='../images/sad-face.png' alt="Sad face" class="slider-icon">
+                    <label>How are you feeling today?</label>
+                </div>
+                
+                <div class="slider-col">
+                    <div class="select-container">
+                        <select name="genre" id="genre" class="custom-select">
+                            <option value="pop">Pop</option>
+                            <option value="classic">Classic</option>
+                            <option value="rock">Rock</option>
+                            <option value="rap">Rap</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="funk">Funk</option>
+                        </select>                    
+                    </div>
+                    <div class="whitespace"></div>
+                    <label>Genre</label>
+                </div>
+
+                <div class="slider-col">
+                    <img src='../images/instruments.png' alt="Instruments" class="slider-icon">
+                    <input type="range" orient="vertical" name="instrumentalness" id="instrumentalnessSlider" min="0" max="1" step="0.01">
+                    <img src='../images/microphone.png' alt="Microphone" class="slider-icon">
+                    <label>Instrumental Level</label>
+                </div>
+                
+                <div class="slider-col">
+                    <img src='../images/high-volume.png' alt="High volume" class="slider-icon">
+                    <input type="range" orient='vertical' name="loudness" id="volumeSlider" min="-60" max="0" step="0.1">
+                    <img src='../images/low-volume.png' alt="Low volume" class="slider-icon">
+                    <label>Volume</label>
+                </div>
+                
+            
+                <div class="slider-col">
+                    <img src='../images/dance.png' alt="Popular" class="slider-icon">
+                    <input type="range" orient='vertical' name="danceability" id="popularitySlider" min="0" max="1" step="0.01">
+                    <img src='../images/calm.png' alt="Niche" class="slider-icon">
+                    <label>Danceability</label>
+                </div>
+                
+            </div>
+            
+            <div class="submit-container">
+                <input type="submit" class="submit" value="Get recommendations!">
+            </div>
+    
+        </form>
+    </body>
+</html>

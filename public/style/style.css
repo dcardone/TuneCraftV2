@@ -1,0 +1,244 @@
+:root {
+  --spotify-green: #1db954;
+  --spotify-dark-gray: #212121;
+  --spotify-black: #121212;
+  --spotify-medium-gray: #535353;
+  --spotify-light-gray: #b3b3b3;
+}
+body {
+  background-color: var(--spotify-black);
+  margin: 0;
+  height: 100%;
+  font-family: "Cal Sans", sans-serif;
+}
+
+/* HOME PAGE START */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--spotify-green);
+  font-size: 5rem;
+}
+.spiel {
+  color: var(--spotify-light-gray);
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  text-align: center; /* center text lines */
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-size: 1.5rem;
+}
+.navbar {
+  background-color: var(--spotify-dark-gray);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--spotify-light-gray);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--spotify-green);
+}
+
+a:hover {
+  color: var(--spotify-green);
+}
+
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.id-input {
+  color: var(--spotify-light-gray);
+  background-color: var(--spotify-black);
+  border: #1db954 0.25rem solid;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  width: 300px;
+  border-radius: 8px;
+  font-family: "Cal Sans", sans-serif;
+}
+.craft-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.craft-button {
+  background-color: var(--spotify-green);
+  color: var(--spotify-dark-gray);
+  border: none;
+  border-radius: 10px; /* makes it pill-shaped */
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.craft-button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+:focus {
+  outline: none;
+}
+/* HOME PAGE END*/
+
+/* SELECT MOOD START */
+
+label {
+  color: var(--spotify-light-gray);
+  width: fit-content;
+  text-align: center;
+  font-size: 23px;
+  margin: 1rem;
+}
+
+input[type="range"][orient='vertical'] {
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+  height: 15rem;
+  width: 20px;
+  accent-color: var(--spotify-green);
+}
+
+
+select {
+  align-self: center;
+  justify-self: center;
+  width: 100px;
+  color: var(--spotify-black);
+  font-family: "Cal Sans", sans-serif;
+}
+
+.custom-select {
+  padding: 10px 12px;
+  width: 100%;
+  font-size: 1rem;
+  border: 2px solid var(--spotify-green);
+  border-radius: 8px;
+  background-color: var(--spotify-black);
+  color: white;
+  background-image: url('/images/down-arrow.svg');
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+}
+
+.slider-group {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+  height: 80%;
+}
+
+
+.slider-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  justify-content: space-between; 
+  width: 18%;
+}
+
+
+.slider-col .icon {
+  font-size: 1.5rem;
+  margin: 0.3rem 0;
+}
+
+.whitespace {
+  margin-bottom: 10rem;
+}
+
+
+.slider-icon {
+  width: 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.select-container {
+  width: 55%;
+}
+
+.submit {
+  background-color: var(--spotify-green);
+  color: var(--spotify-dark-gray);
+  border: none;
+  border-radius: 10px; /* makes it pill-shaped */
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.submit:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+
+/** RECOMMENDATIONS PAGE **/
+
+a {
+  text-decoration: underline;
+  color: var(--spotify-light-gray);
+}
+
+table {
+  width: 80%; /* or 100% to fill the whole container */
+  margin: 0 auto; /* horizontally center the table */
+  text-align: center;
+  color: var(--spotify-light-gray);
+  font-size: 3rem;
+  border-collapse: collapse;
+}
+
+table a {
+text-decoration: none;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid var(--spotify-light-gray);
+}
+
+.recommendationTable {
+  width: 100%;
+}
+
+
+
+

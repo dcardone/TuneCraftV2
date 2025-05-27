@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuneCraft</title>
+    <link rel="stylesheet" href="../style/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/music-icon.png">
+  </head>
+  <body>
+    <h1 class="header">TuneCraft</h1>
+    <p class="spiel">Music that fits your mood — crafted just for you.</p>
+    <p class="spiel">
+      TuneCraft takes how you're feeling and turns it into a personalized song
+      or playlist recommendation using Spotify's API. Whether you're hyped,
+      mellow, or somewhere in between, we match your vibe with the perfect
+      sound.
+    </p>
+    <p class="spiel">
+      Start by entering your user ID. If you haven’t visited today, we’ll guide
+      you through a quick mood check. From genre preferences to how loud or
+      niche you like your music, we’ll ask a few easy questions — then craft
+      your musical match. You can explore today’s recommendations or look back
+      at your recent history, all in one place. No stress. Just good music.
+    </p>
+
+    <div class="input-container">
+      <input
+        type="text"
+        class="id-input"
+        id="userIdInput"
+        placeholder="User ID"
+      />
+    </div>
+    <div class="craft-container">
+      <button class="craft-button" onclick="redirectWithUserId()">Craft</button>
+    </div>
+  </body>
+
+  <script>
+    function redirectWithUserId() {
+      const userId = document.getElementById("userIdInput").value.trim();
+      if (userId) {
+        window.location.href = `/selectMood?userId=${encodeURIComponent(
+          userId
+        )}`;
+      } else {
+        alert("Please enter a User ID.");
+      }
+    }
+  </script>
+</html>
