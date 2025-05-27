@@ -8,4 +8,4 @@ This is my extended version of the final group project for the Spring '25 semest
 
 **Contact Email:** dcardone@umd.edu
 
-**Deployed App Link:** https://tunecraft.onrender.com/](https://tunecraftv2.onrender.com/
+**Deployed App Link:** https://tunecraftv2.onrender.com/
